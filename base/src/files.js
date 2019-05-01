@@ -1,0 +1,17 @@
+export default {
+  "/.gitignore": {
+    "code": "# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.\n\n# dependencies\n/node_modules\n/.pnp\n.pnp.js\n\n# testing\n/coverage\n\n# production\n/build\n\n# misc\n.DS_Store\n.env.local\n.env.development.local\n.env.test.local\n.env.production.local\n\nnpm-debug.log*\nyarn-debug.log*\nyarn-error.log*\n"
+  },
+  "/okapi.js": {
+    "code": "window.addEventListener('message', (event) => {\r\n  if (event.data.type === 'tutorial') {\r\n    console.log(event.data.message)\r\n  }\r\n})"
+  },
+  "/package.json": {
+    "code": "{\r\n  \"name\": \"tutorial\",\r\n  \"version\": \"1.0.0\",\r\n  \"main\": \"index.js\",\r\n  \"author\": \"Harry Hedger <hedgerh@gmail.com>\",\r\n  \"license\": \"MIT\",\r\n  \"scripts\": {\r\n    \"start\": \"cd ./base && npm start\"\r\n  },\r\n  \"dependencies\": {\r\n    \"react\": \"^16.8.6\",\r\n    \"react-dom\": \"^16.8.6\"\r\n  }\r\n}\r\n"
+  },
+  "/README.md": {
+    "code": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.<br>\nOpen [http://localhost:3000](http://localhost:3000) to view it in the browser.\n\nThe page will reload if you make edits.<br>\nYou will also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.<br>\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.<br>\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.<br>\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can’t go back!**\n\nIf you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.\n\nYou don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n"
+  },
+  "/src/index.js": {
+    "code": "import React from 'react'\r\nimport ReactDOM from 'react-dom'\r\n\r\nconst MyComponent = () => <div>Hello world!</div>\r\n\r\nReactDOM.render(<MyComponent/>, document.getElementById('root'));"
+  }
+}
